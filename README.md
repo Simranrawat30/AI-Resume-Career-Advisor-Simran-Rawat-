@@ -107,18 +107,40 @@ Below is the architecture diagram showing how data flows from user input through
 
 # 🛠️ TECHNOLOGIES USED
 
-Technology	Purpose.
+Technologies used 
 
-  🐍 Python   Core programming language
-  🎈 Streamlit	Web application framework and user interface
-  ⚡ Groq API	AI-powered resume and career analysis
-  📄 PyPDF	PDF text extraction
-  📑 PyMuPDF	Fallback PDF text extraction
-  📝 python-docx	DOCX text extraction
-  🔗 LangChain	RAG pipeline and document processing
-  🗄️ ChromaDB	Vector database for storing document embeddings
-  🧠 HuggingFace Embeddings	Converts text into numerical vector representations
-  🔍 all-MiniLM-L6-v2	Sentence embedding model used for semantic search
-  🔐 python-dotenv	Loads environment variables locally
-  🐙 Git & GitHub	Version control and source code hosting
-  ☁️ Streamlit Community Cloud	Application deployment
+🐍 Python   Core programming language
+🎈 Streamlit	Web application framework and user interface
+⚡ Groq API	AI-
+📄 PyPDF	PDF text extraction
+📑 PyMuPDF	Fallback PDF 
+📝 python-docx	DOCX  extraction
+🔗 LangChain	RAG pipeline
+🗄️ ChromaDB	
+🧠 HuggingFace Embeddings	
+🔍 all-MiniLM-L6-v2	
+🔐 python-dotenv	Loads
+🐙 Git & GitHub	Version
+☁️ Streamlit Community Cloud	Application deployment
+
+
+# 🚀 Installation & Local Execution
+
+1. Prerequisites.
+
+Node.js: Version 18+ (tested on v24.11.0)
+Python: Version 3.10+ (tested on 3.12.10)
+Google Gemini API Key: Obtain a key from Google AI Studio.
+2. Backend Setup.
+
+Open a terminal and navigate to the backend directory.
+Create and configure your .env file:
+cp .env.example .env
+Edit .env and add your GEMINI_API_KEY:
+
+Install Python dependencies:
+pip install -r requirements.txt
+Note: If ChromaDB fails to build on your Windows machine, the system will automatically fall back to an in-memory cosine keyword similarity store for local evaluations.
+Start the FastAPI development server:
+uvicorn main:app --reload --port 8000
+The backend API will start on http://127.0.0.1:8000. You can view the Swagger docs at http://127.0.0.1:8000/docs.
