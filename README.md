@@ -6,14 +6,16 @@ AI Resume & Career Advisor is an advanced AI-powered full-stack application desi
 # 🌟 KEY FETURES
 
    # 1•📄 Contextual PDF Parsing: 
-      Extracts unstructured data from resumes and job descriptions using pypdf.
+      
+  Extracts unstructured data from resumes and job descriptions using pypdf.
    # 2•🔍 Vector-Based RAG Retrieval: 
-      Implements text chunking and TF-IDF Cosine Similarity for targeted context extraction.
+      
+  Implements text chunking and TF-IDF Cosine Similarity for targeted context extraction.
    # 3•🤖 Multi-Agent Evaluation Pipeline:
-          •Agent 1 (ATS Recruiter): Computes match percentage and audits missing technical capabilities.
-          •Agent 2 (Career Coach): Generates targeted interview preparation questions and a week-by-week 3-month action plan.
+   Agent 1 (ATS Recruiter): Computes match percentage and audits missing technical capabilities.
+   Agent 2 (Career Coach): Generates targeted interview preparation questions and a week-by-week 3-month action plan.
    # 4•📊 Interactive Dashboard: 
-      Modern dark-mode UI with compatibility meters, dual output tabs, and single-click Markdown report export.
+  Modern dark-mode UI with compatibility meters, dual output tabs, and single-click Markdown report export.
 
 
 # 📉SYSTEM ARCHITECTURE & DATA FLOW📈
@@ -68,7 +70,7 @@ Below is the architecture diagram showing how data flows from user input through
 
 
  # 1. Clone the Repository
-   git clone [https://github.com/iharshsinghh/Resume-Advisor-AI.git](https://github.com/iharshsinghh/Resume-Advisor-AI.git)
+   
    cd Resume-Advisor-AI
  # 2. Set Up Virtual Environment
    python -m venv venv
@@ -82,3 +84,40 @@ Below is the architecture diagram showing how data flows from user input through
    GOOGLE_API_KEY="your_gemini_api_key_here"
  # 5. Run the Application
    python -m streamlit run app.py --server.fileWatcherType none
+
+# PROJECT STRUCTURE
+    AI_Resume_career_Advisor/
+    │
+    ├── streamlit_app.py
+    ├── rag.py
+    ├── requirements.txt
+    ├── README.md
+    ├── report.pdf
+    ├── .gitignore
+    │
+    ├── app.py
+    ├── index.py
+    │
+    ├── templates/
+    │   ├── index.html
+    │   └── result.html
+    │
+    └── static/
+      └── style.css
+
+# 🛠️ TECHNOLOGIES USED
+
+Technology	Purpose
+🐍 Python   Core programming language
+🎈 Streamlit	Web application framework and user interface
+⚡ Groq API	AI-powered resume and career analysis
+📄 PyPDF	PDF text extraction
+📑 PyMuPDF	Fallback PDF text extraction
+📝 python-docx	DOCX text extraction
+🔗 LangChain	RAG pipeline and document processing
+🗄️ ChromaDB	Vector database for storing document embeddings
+🧠 HuggingFace Embeddings	Converts text into numerical vector representations
+🔍 all-MiniLM-L6-v2	Sentence embedding model used for semantic search
+🔐 python-dotenv	Loads environment variables locally
+🐙 Git & GitHub	Version control and source code hosting
+☁️ Streamlit Community Cloud	Application deployment
