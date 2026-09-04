@@ -61,3 +61,25 @@ Below is the architecture diagram showing how data flows from user input through
        |   ChromaDB Vector Store  |
        |     (Cosine Metric)      |
        +--------------------------+
+
+
+
+Features (maps to assignment requirements)
+
+Requirement	Implementation
+Prompt Engineering — resume analysis	prompts/templates.py::RESUME_ANALYSIS_PROMPT
+Prompt Engineering — skill gap identification	Same prompt; missing_skills / matched_skills fields
+RAG — retrieve job descriptions from PDFs	utils/pdf_utils.py + rag/vector_store.py
+Agent — resume reviewer	agents/resume_reviewer.py
+Agent — career advisor	agents/career_advisor.py
+Output — resume score	Tab 1 in app.py
+Output — missing skills	Tab 1 in app.py
+Output — interview prep roadmap	Tab 2 in app.py
+Stretch — 3-month learning plan	Tab 3 in app.py (timeframe selectable: 1/3/6 months)
+# 🎬 SETUP
+
+pip install -r requirements.txt
+cp .env.example .env
+# edit .env and add your OPENAI_API_KEY
+
+streamlit run app.py
