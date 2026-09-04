@@ -69,20 +69,20 @@ Below is the architecture diagram showing how data flows from user input through
 
 
 
- # 1. Clone the Repository
+ #1. Clone the Repository
    
    cd Resume-Advisor-AI
- # 2. Set Up Virtual Environment
+ #2. Set Up Virtual Environment
    python -m venv venv
-   # Windows:
+   #Windows:
    venv\Scripts\activate
-   # Linux/macOS:
+   #Linux/macOS:
    source venv/bin/activate
- # 3. Install Dependencies
+ #3. Install Dependencies
    pip install -r requirements.txt
- # 4. Configure Environment Variables
+ #4. Configure Environment Variables
    GOOGLE_API_KEY="your_gemini_api_key_here"
- # 5. Run the Application
+ #5. Run the Application
    python -m streamlit run app.py --server.fileWatcherType none
 
 # PROJECT STRUCTURE
@@ -107,17 +107,18 @@ Below is the architecture diagram showing how data flows from user input through
 
 # 🛠️ TECHNOLOGIES USED
 
-Technology	Purpose
-🐍 Python   Core programming language
-🎈 Streamlit	Web application framework and user interface
-⚡ Groq API	AI-powered resume and career analysis
-📄 PyPDF	PDF text extraction
-📑 PyMuPDF	Fallback PDF text extraction
-📝 python-docx	DOCX text extraction
-🔗 LangChain	RAG pipeline and document processing
-🗄️ ChromaDB	Vector database for storing document embeddings
-🧠 HuggingFace Embeddings	Converts text into numerical vector representations
-🔍 all-MiniLM-L6-v2	Sentence embedding model used for semantic search
-🔐 python-dotenv	Loads environment variables locally
-🐙 Git & GitHub	Version control and source code hosting
-☁️ Streamlit Community Cloud	Application deployment
+Technology	Purpose.
+
+  🐍 Python   Core programming language
+  🎈 Streamlit	Web application framework and user interface
+  ⚡ Groq API	AI-powered resume and career analysis
+  📄 PyPDF	PDF text extraction
+  📑 PyMuPDF	Fallback PDF text extraction
+  📝 python-docx	DOCX text extraction
+  🔗 LangChain	RAG pipeline and document processing
+  🗄️ ChromaDB	Vector database for storing document embeddings
+  🧠 HuggingFace Embeddings	Converts text into numerical vector representations
+  🔍 all-MiniLM-L6-v2	Sentence embedding model used for semantic search
+  🔐 python-dotenv	Loads environment variables locally
+  🐙 Git & GitHub	Version control and source code hosting
+  ☁️ Streamlit Community Cloud	Application deployment
