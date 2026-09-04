@@ -1,2 +1,4 @@
-🚀# AI-Resume-Career-Advisor-Simran-Rawat-
+#  🚀AI-Resume-Career-Advisor-Simran-Rawat-
+
+
 AI Resume & Career Advisor is an advanced AI-powered full-stack application designed to help students and job seekers align their resumes with specific Job Descriptions (JD). The system extracts text from PDF documents, indexes the job description using a Retrieval-Augmented Generation (RAG) vector database pipeline, compares candidate qualifications, and runs a career advisor agent layer to generate suitability reports, identify skill gaps, provide interview preparation roadmaps, and build a personalized 3-month learning roadmap.
